@@ -1,0 +1,65 @@
+.gridOverlay {
+	position: fixed; /* фиксированная — не прокручивается */
+	inset: 0;
+	pointer-events: none; /* не мешает кликам */
+	background-image: radial-gradient(
+		circle,
+		rgba(201, 192, 179, 0.6) 1.1px,
+		transparent 0.9px
+	);
+	background-size: 4px 4px;
+	mix-blend-mode: overlay; /* или overlay, soft-light — пробуй разные */
+	z-index: 9999; /* выше всего */
+}
+
+/* TVLines.module.css */
+
+.tvLines {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+}
+
+.tvLine {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.003);
+}
+
+.lineUp1 {
+	animation: tvRise 4s linear infinite;
+	height: 10px;
+}
+
+.lineDown1 {
+	animation: tvFall 8s linear infinite;
+	height: 600px;
+}
+
+.lineDown2 {
+	animation: tvFall 12s linear infinite 6s;
+	height: 800px;
+}
+
+@keyframes tvFall {
+	0% {
+		transform: translateY(-1000px);
+	}
+	100% {
+		transform: translateY(100vh);
+	}
+}
+
+@keyframes tvRise {
+	0% {
+		transform: translateY(120vh); /* начинаем за пределами низа */
+	}
+	100% {
+		transform: translateY(-4000px); /* уходим за верх */
+	}
+}

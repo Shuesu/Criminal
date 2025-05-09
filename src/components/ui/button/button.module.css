@@ -1,0 +1,19 @@
+.button {
+	all: unset;
+	font-size: var(--font-size-md);
+	color: var(--orange);
+	text-decoration: none;
+	transition: all 0.3s ease;
+	padding: 10px;
+}
+
+.button.active {
+	background: var(--orange);
+	color: var(--black);
+	text-shadow: none;
+}
+
+.button:not(.active):hover {
+	background: var(--hover-color);
+	transition: all 0.2s, opacity 0.2s;
+}

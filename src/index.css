@@ -1,15 +1,39 @@
 :root {
-	--accent-color-hue: 236;
-	--accent-color-saturation: 100%;
-	--disabled-color: #cfcfcf;
+	--orange: #f1ac43;
+	--black: #241d13;
+	--hover-color: rgba(241, 172, 67, 0.2);
+	--danger-color: #dc3545;
+	--text-color: #333;
+	--font-size-base: 1vw; /* основной текст */
+	--font-size-md: 1.2vw; /* чуть больше обычного */
+	--font-size-lg: 1.3vw;
+}
+
+@font-face {
+	font-family: 'VCR OSD Mono';
+	src: url('../src/assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
 }
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
+	font-family: 'VCR OSD Mono', monospace;
 	-moz-osx-font-smoothing: grayscale;
+	background: var(--black);
+	font-size: var(--font-size-base);
+	color: var(--orange);
+	text-shadow: 0 0 5px #f1ac43;
+	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 code {

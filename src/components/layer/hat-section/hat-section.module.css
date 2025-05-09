@@ -1,0 +1,45 @@
+.hatSection {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.left {
+	text-shadow: 0 0 16px var(--orange);
+	font-size: var(--font-size-lg);
+}
+
+.span {
+	color: var(--black);
+	background: var(--orange);
+	margin-left: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 0 0 10px var(--orange);
+}
+
+.right {
+	text-shadow: 0 0 8px var(--orange);
+	font-size: var(--font-size-md);
+	display: flex;
+	align-items: center;
+	padding-right: 2%;
+}
+
+.rightBtn {
+	padding: 10px;
+}
+
+.mode {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.green {
+	transition: opacity 0.2s;
+	transform: rotate(180deg);
+}

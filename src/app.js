@@ -1,14 +1,23 @@
 import React from 'react';
+import { HatSection, TVlayer } from './components';
+import styles from './app.module.css';
 
 export const App = () => {
 	return (
-		<div>
-			<div>
-				<h1>Заголовок приложения</h1>
-				<div>
-					{/* Добавьте ваш контент здесь */}
-				</div>
-			</div>
-		</div>
+		<div className={styles.container}>
+			<TVlayer></TVlayer>
+			<header>
+				<HatSection></HatSection>
+				{/* <NavigationSection></NavigationSection> */}
+				{/* <RunTextSection></RunTextSection> */}
+			</header>
+			<main className={styles.main}>
+				{/* <MapSection></MapSection> */}
+				{/* <ChartSection></ChartSection> */}
+				{/* <StatsGraphSection></StatsGraphSection> */}
+				{/* <RunTextSection></RunTextSection> */}
+			</main>
+
+		</div >
 	);
 };
