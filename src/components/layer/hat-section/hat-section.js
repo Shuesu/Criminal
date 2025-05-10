@@ -1,5 +1,4 @@
-import { Button } from '../../ui';
-import { Mode, Sound } from './components';
+import { Mode, Sound, About } from './components';
 import styles from './hat-section.module.css';
 
 export const HatSection = () => {
@@ -12,9 +11,7 @@ export const HatSection = () => {
          <div className={styles.right}>
             <Sound />
             <Mode />
-            <Button className={styles.rightBtn}>
-               About
-            </Button>
+            <About />
          </div>
       </div>
    );
