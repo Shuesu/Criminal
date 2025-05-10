@@ -3,10 +3,25 @@
 	--black: #241d13;
 	--hover-color: rgba(241, 172, 67, 0.2);
 	--danger-color: #dc3545;
-	--text-color: #333;
 	--font-size-base: 1vw; /* основной текст */
 	--font-size-md: 1.2vw; /* чуть больше обычного */
 	--font-size-lg: 1.3vw;
+}
+
+:root.green-mode {
+	filter: hue-rotate(85deg);
+}
+
+body {
+	margin: 0;
+	font-family: 'VCR OSD Mono', monospace;
+	-moz-osx-font-smoothing: grayscale;
+	background: var(--black);
+	font-size: var(--font-size-base);
+	color: var(--orange);
+	text-shadow: 0 0 5px #f1ac43;
+	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -22,18 +37,6 @@ input,
 textarea,
 select {
 	font-family: inherit;
-}
-
-body {
-	margin: 0;
-	font-family: 'VCR OSD Mono', monospace;
-	-moz-osx-font-smoothing: grayscale;
-	background: var(--black);
-	font-size: var(--font-size-base);
-	color: var(--orange);
-	text-shadow: 0 0 5px #f1ac43;
-	text-transform: uppercase;
-	box-sizing: border-box;
 }
 
 code {
