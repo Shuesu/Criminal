@@ -1,27 +1,36 @@
-import modeIcon from '../../../../../assets/img/Colorbtn.svg';
+import Icon from '../../../../../assets/img/Colorbtn.svg';
 import { Button } from '../../../../ui';
 import { useState, useEffect } from 'react';
 import styles from './mode.module.css';
 
 export const Mode = () => {
    const [isGreenMode, setIsGreenMode] = useState(() => {
-      const saved = localStorage.getItem('greenMode');
-      return saved === 'true';
+      try {
+         return localStorage.getItem('greenMode') === 'true';
+      } catch {
+         return false;
+      }
    });
 
-   // Эффект для применения темы при загрузке
+   // Эффект для применения темы
    useEffect(() => {
       const root = document.documentElement;
-      root.style.filter = isGreenMode ? 'hue-rotate(85deg)' : '';
-   }, [isGreenMode]); // Пустой массив зависимостей = выполняется только при монтировании
+
+      if (isGreenMode) {
+         root.classList.add('green-mode');
+      } else {
+         root.classList.remove('green-mode');
+      }
+
+      try {
+         localStorage.setItem('greenMode', isGreenMode);
+      } catch (error) {
+         console.error('Failed to save theme preference:', error);
+      }
+   }, [isGreenMode]);
 
    const toggleTheme = () => {
-      const newMode = !isGreenMode;
-      setIsGreenMode(newMode);
-      localStorage.setItem('greenMode', newMode);
-
-      const root = document.documentElement;
-      root.style.filter = newMode ? 'hue-rotate(85deg)' : '';
+      setIsGreenMode(prev => !prev);
    };
 
    return (
@@ -29,14 +38,15 @@ export const Mode = () => {
          <Button
             onClick={toggleTheme}
             className={styles.rightBtn}
+            aria-label={isGreenMode ? 'Switch to normal mode' : 'Switch to green mode'}
          >
             MODE
          </Button>
          <img
-            className={`${styles.modeIcon} ${isGreenMode ? styles.green : ''}`}
-            src={modeIcon}
+            className={`${isGreenMode ? styles.green : ''}`}
+            src={Icon}
             alt="Theme icon"
          />
       </div>
    );
-}
+};

@@ -22,9 +22,8 @@ export const About = () => {
 
          <div
             className={`${styles.overlay} ${isOpen ? styles.on : ''}`}
-            onClick={handleClose}
          >
-            <div className={styles.frame} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.frame}>
                <div className={styles.frame_2}>
                   <div className={styles.frame_3}>
                      <div className={styles.text}>
