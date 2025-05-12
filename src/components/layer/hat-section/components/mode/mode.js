@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
 import modeIcon from '../../../../../assets/img/Colorbtn.svg';
 import { Button } from '../../../../ui';
+import { useState, useEffect } from 'react';
 import styles from './mode.module.css';
 
 export const Mode = () => {
@@ -13,7 +13,7 @@ export const Mode = () => {
    useEffect(() => {
       const root = document.documentElement;
       root.style.filter = isGreenMode ? 'hue-rotate(85deg)' : '';
-   }, []); // Пустой массив зависимостей = выполняется только при монтировании
+   }, [isGreenMode]); // Пустой массив зависимостей = выполняется только при монтировании
 
    const toggleTheme = () => {
       const newMode = !isGreenMode;

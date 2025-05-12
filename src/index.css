@@ -6,6 +6,7 @@
 	--font-size-base: 1vw; /* основной текст */
 	--font-size-md: 1.2vw; /* чуть больше обычного */
 	--font-size-lg: 1.3vw;
+	--font-size-xl: 1.7vw;
 }
 
 :root.green-mode {
