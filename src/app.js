@@ -1,5 +1,4 @@
-import React from 'react';
-import { HatSection, TVlayer } from './components';
+import { TVlayer, HatSection, NavigationSection, ChartSection } from './components';
 import styles from './app.module.css';
 
 export const App = () => {
@@ -8,7 +7,7 @@ export const App = () => {
 			<TVlayer></TVlayer>
 			<header>
 				<HatSection></HatSection>
-				{/* <NavigationSection></NavigationSection> */}
+				<NavigationSection></NavigationSection>
 				{/* <RunTextSection></RunTextSection> */}
 			</header>
 			<main className={styles.main}>
