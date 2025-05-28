@@ -3,8 +3,8 @@
 	--black: #241d13;
 	--hover-color: rgba(241, 172, 67, 0.2);
 	--danger-color: #dc3545;
-	--font-size-base: 1vw; /* основной текст */
-	--font-size-md: 1.2vw; /* чуть больше обычного */
+	--font-size-base: 1vw;
+	--font-size-md: 1.2vw;
 	--font-size-lg: 1.3vw;
 	--font-size-xl: 1.7vw;
 }
@@ -13,16 +13,36 @@
 	filter: hue-rotate(85deg);
 }
 
+a {
+	all: unset;
+	cursor: pointer;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* Для Chrome, Safari, Edge */
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Для Firefox */
+html {
+	scrollbar-width: none;
+	-ms-overflow-style: none; /* IE и Edge */
+}
+
 body {
+	overflow: -moz-scrollbars-none; /* Старые Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
 	margin: 0;
 	font-family: 'VCR OSD Mono', monospace;
 	-moz-osx-font-smoothing: grayscale;
 	background: var(--black);
 	font-size: var(--font-size-base);
 	color: var(--orange);
-	text-shadow: 0 0 5px #f1ac43;
+	text-shadow: 0 0 5px var(--orange);
 	text-transform: uppercase;
-	box-sizing: border-box;
 }
 
 @font-face {

@@ -1,5 +1,16 @@
 .container {
-	max-width: 80vw;
+	max-width: 79vw;
 	margin: 0 auto;
 	padding: 1.1vw 0;
+}
+
+.main {
+	display: grid;
+	grid-template:
+		'Area Area-2 Area-3 Area-3 Area-3' 1.75fr
+		'Area-4 Area-4 Area-4 Area-5 Area-5' 1fr / 0.6fr 1fr 5% 0.25fr 5%;
+	grid-row-gap: 16px;
+	grid-column-gap: 16px;
+	grid-auto-columns: 1fr;
+	box-sizing: border-box;
 }

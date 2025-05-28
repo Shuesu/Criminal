@@ -1,0 +1,13 @@
+.svgBox {
+	grid-area: Area-5;
+	border: 1px solid var(--orange);
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1vw;
+	box-shadow: inset 0 0 6px #f1ac43, 0 0 6px #f1ac43;
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}

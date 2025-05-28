@@ -8,7 +8,6 @@ export const Sound = () => {
    const [isToggled, setIsToggled] = useState(false);
    const audioRef = useRef(null);
 
-   // Инициализация аудио
    useEffect(() => {
       audioRef.current = new Audio(soundFile);
       audioRef.current.loop = true;
@@ -21,7 +20,6 @@ export const Sound = () => {
       };
    }, []);
 
-   // Управление воспроизведением
    useEffect(() => {
       if (!audioRef.current) return;
 

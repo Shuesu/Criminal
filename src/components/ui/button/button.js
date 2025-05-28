@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import styles from './button.module.css';
-import defaultClickSound from '../../../assets/audio/Light Switch Sound Effect.mp3'; // Звук по умолчанию
+import defaultClickSound from '../../../assets/audio/Light Switch Sound Effect.mp3';
 
 export const Button = ({
    children,

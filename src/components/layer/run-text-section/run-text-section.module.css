@@ -1,0 +1,13 @@
+.runTextSection {
+	border-right: 2px solid var(--orange);
+	border-left: 2px solid var(--orange);
+	padding: 17px 10px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.marqueeContainer {
+	font-size: 25px;
+	text-shadow: none;
+	align-items: center;
+}

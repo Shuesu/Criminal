@@ -16,14 +16,19 @@ const data = [
 
 export const BarChart = () => {
    const svgRef = useRef();
+   const containerRef = useRef();
 
    useEffect(() => {
+      if (!containerRef.current) return;
+
       // Очистка предыдущего графика
       d3.select(svgRef.current).selectAll('*').remove();
 
+      // Получаем текущие размеры контейнера
+      const width = containerRef.current.clientWidth;
+      const height = containerRef.current.clientHeight;
+
       // Размеры и отступы
-      const width = 500;
-      const height = 300;
       const margin = { top: 20, right: 20, bottom: 30, left: 50 };
       const innerWidth = width - margin.left - margin.right;
       const innerHeight = height - margin.top - margin.bottom;
@@ -159,11 +164,10 @@ export const BarChart = () => {
          .style('font-size', '12px')
          .style('fill', '#f1ac43')
          .text(d => d.sales);
-
    }, []);
 
    return (
-      <div className={styles.chart}>
+      <div ref={containerRef} className={styles.chart}>
          <svg ref={svgRef}></svg>
       </div>
    );
