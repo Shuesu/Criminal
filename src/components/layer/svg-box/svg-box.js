@@ -1,9 +1,15 @@
 import styles from './svg-box.module.css';
 
-export const SvgBox = () => {
+export const SvgBox = ({ svgPath }) => {
    return (
       <div className={styles.svgBox}>
-         123
+         {svgPath && (
+            <img
+               src={svgPath}
+               alt="Crime icon"
+               className={styles.icon}
+            />
+         )}
       </div>
    );
 }

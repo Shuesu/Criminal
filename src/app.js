@@ -1,10 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
-import { TVlayer, HatSection, NavigationSection, ChartSection, RunTextSection, MapSection, StatsGraphSection, TextScrollSection, SvgBox } from './components';
+import { TVlayer, HatSection, NavigationSection, RunTextSection } from './components';
 import styles from './app.module.css';
+import { CrimeContent } from './components';
 
 export const App = () => {
 	return (
-
 		<div className={styles.container}>
 			<TVlayer></TVlayer>
 			<header>
@@ -12,23 +11,10 @@ export const App = () => {
 				<NavigationSection></NavigationSection>
 				<RunTextSection></RunTextSection>
 			</header>
-			<main className={styles.main}>
-				<MapSection />
-				<ChartSection />
-				<StatsGraphSection></StatsGraphSection>
-				<TextScrollSection></TextScrollSection>
-				<SvgBox></SvgBox>
-			</main>
 
-			<Routes>
-				<Route path="/" element={2} />
-				<Route path="/robbery" element={2} />
-				<Route path="/theft" element={3} />
-				<Route path="/rape" element={4} />
-				<Route path="/stealing" element={5} />
-				<Route path="/drugs" element={6} />
-				<Route path="*" element={10} />
-			</Routes>
-		</div >
+			<main className={styles.main}>
+				<CrimeContent />
+			</main>
+		</div>
 	);
 };

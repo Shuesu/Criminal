@@ -3,7 +3,9 @@ export const crimeData = [
     id: "murder",
     name: "Murder",
     textScroll: "Murder pages text",
-    cities: [
+    textStats: "Murder stats text",
+    svgPath: "/src/assets/icons/eye-icon.svg",
+    districts: [
       {
         id: "district1",
         name: "Central",
@@ -24,7 +26,7 @@ export const crimeData = [
         id: "district2",
         name: "Oktyabrsky",
         chartData: [
-          { name: '2015', value: 12 },
+          { name: '2015', value: 14 },
           { name: '2016', value: 11 },
           { name: '2017', value: 13 },
           { name: '2018', value: 14 },
@@ -40,7 +42,7 @@ export const crimeData = [
         id: "district3",
         name: "Leninsky",
         chartData: [
-          { name: '2015', value: 12 },
+          { name: '2015', value: 177 },
           { name: '2016', value: 11 },
           { name: '2017', value: 13 },
           { name: '2018', value: 14 },
@@ -56,7 +58,7 @@ export const crimeData = [
         id: "district4",
         name: "Kirovsky",
         chartData: [
-          { name: '2015', value: 12 },
+          { name: '2015', value: 512 },
           { name: '2016', value: 11 },
           { name: '2017', value: 13 },
           { name: '2018', value: 14 },
@@ -90,7 +92,9 @@ export const crimeData = [
     id: "robbery",
     name: "Robbery",
     textScroll: "Robbery pages text",
-    cities: [
+    textStats: "Robbery stats text",
+    image: "/src/assets/icons/eye.svg",
+    districts: [
       {
         id: "district1",
         name: "Central",

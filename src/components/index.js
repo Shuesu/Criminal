@@ -11,3 +11,6 @@ export * from './layer/map-section/map-section';
 export * from './layer/stats-graph-section/stats-graph-section';
 export * from './layer/text-scroll-section/text-scroll-section';
 export * from './layer/svg-box/svg-box';
+
+// main layers+
+export * from './layer/crime-content/crime-content';

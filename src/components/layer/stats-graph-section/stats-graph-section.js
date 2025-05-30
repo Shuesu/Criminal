@@ -1,10 +1,11 @@
 import { FieldsetBox } from '../../ui'
 import styles from './stats-graph-section.module.css';
 
-export const StatsGraphSection = () => {
+export const StatsGraphSection = ({ value, textStats }) => {
    return (
       <FieldsetBox className={styles.statsGraphSection} label="Danger rating">
-         123
+         <div className={styles.value}>{value}</div>
+         <div className={styles.textStats}>{textStats}</div>
       </FieldsetBox>
    );
 }
