@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './bar-chart.module.css';
 import * as d3 from 'd3';
+// import data from '../../../../../data/data'
 
 const data = [
    { name: '2015', sales: 13 },

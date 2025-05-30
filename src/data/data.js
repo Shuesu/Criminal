@@ -1,0 +1,113 @@
+export const crimeData = [
+  {
+    id: "murder",
+    name: "Murder",
+    textScroll: "Murder pages text",
+    cities: [
+      {
+        id: "district1",
+        name: "Central",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 5.11,
+        textScroll: "Murder Central districts text",
+      },
+      {
+        id: "district2",
+        name: "Oktyabrsky",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 4.52,
+        textScroll: "Murder Oktyabrsky districts text",
+      },
+      {
+        id: "district3",
+        name: "Leninsky",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 4.78,
+        textScroll: "Murder Leninsky districts text",
+      },
+      {
+        id: "district4",
+        name: "Kirovsky",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 9.52,
+        textScroll: "Murder Kirovsky districts text",
+      },
+      {
+        id: "district5",
+        name: "Sovetsky",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 2.52,
+        textScroll: "Murder Sovetsky districts text",
+      },
+    ]
+  },
+  {
+    id: "robbery",
+    name: "Robbery",
+    textScroll: "Robbery pages text",
+    cities: [
+      {
+        id: "district1",
+        name: "Central",
+        chartData: [
+          { name: '2015', value: 12 },
+          { name: '2016', value: 11 },
+          { name: '2017', value: 13 },
+          { name: '2018', value: 14 },
+          { name: '2019', value: 15 },
+          { name: '2020', value: 9 },
+          { name: '2021', value: 12 },
+          { name: '2022', value: 6 },
+        ],
+        stats: 5430,
+        textScroll: "Robbery Central districts text",
+      },
+      // другие районы
+    ]
+  },
+];
