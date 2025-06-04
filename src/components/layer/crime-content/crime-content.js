@@ -1,4 +1,5 @@
-import { useState } from 'react';
+// src/components/CrimeContent.jsx
+import { useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { crimeData } from '../../../data/data';
 import { MapSection, ChartSection, StatsGraphSection, TextScrollSection, SvgBox } from '../../../components';
@@ -7,10 +8,16 @@ export const CrimeContent = () => {
    const { crimeType = "murder" } = useParams();
    const [selectedDistrict, setSelectedDistrict] = useState('district1');
 
-   const currentCrime = crimeData.find(crime => crime.id === crimeType) || crimeData[0];
-   const currentDistrict = currentCrime.districts.find(d => d.id === selectedDistrict) || currentCrime.districts[0];
+   // Используем useMemo для стабильных данных
+   const { currentCrime, currentDistrict } = useMemo(() => {
+      const crime = crimeData.find(crime => crime.id === crimeType) || crimeData[0];
+      const district = crime.districts.find(d => d.id === selectedDistrict) || crime.districts[0];
+      return { currentCrime: crime, currentDistrict: district };
+   }, [crimeType, selectedDistrict]);
 
-   const renderContent = () => (
+   console.log('Current icon:', currentCrime.icon); // Для отладки
+
+   return (
       <>
          <MapSection
             districts={currentCrime.districts}
@@ -26,9 +33,10 @@ export const CrimeContent = () => {
             crimeText={currentCrime.textScroll}
             districtText={currentDistrict.textScroll}
          />
-         <SvgBox svgPath={currentCrime.svgPath} />
+         <SvgBox
+            iconName={currentCrime.icon}
+            key={`${crimeType}-${selectedDistrict}`} // Уникальный ключ
+         />
       </>
    );
-
-   return renderContent();
 };

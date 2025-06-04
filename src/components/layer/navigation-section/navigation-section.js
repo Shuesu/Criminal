@@ -8,54 +8,55 @@ export const NavigationSection = () => {
    return (
       <div className={styles.navigationSection}>
          <nav className={styles.navigation}>
-            <Link to="/">
+            <Link to="/crime/murder">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/'} // Подсветка для главной
+                  isActive={location.pathname === '/crime/murder'}
                >
                   Murder
                </Button>
             </Link>
-            <Link to="/robbery">
+            <Link to="/crime/robbery">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/robbery'}
+                  isActive={location.pathname === '/crime/robbery'}
                >
                   Robbery
                </Button>
             </Link>
-            <Link to="/theft">
+            <Link to="/crime/theft">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/theft'}
+                  isActive={location.pathname === '/crime/theft'}
                >
                   Theft
                </Button>
             </Link>
-            <Link to="/rape">
+            <Link to="/crime/rape">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/rape'}
+                  isActive={location.pathname === '/crime/rape'}
                >
                   Rape
                </Button>
             </Link>
-            <Link to="/stealing">
+            <Link to="/crime/stealing">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/stealing'}
+                  isActive={location.pathname === '/crime/stealing'}
                >
                   Stealing
                </Button>
             </Link>
-            <Link to="/drugs">
+            <Link to="/crime/drugs">
                <Button
                   className={styles.buttonLink}
-                  isActive={location.pathname === '/drugs'}
+                  isActive={location.pathname === '/crime/drugs'}
                >
                   Drugs
                </Button>
             </Link>
+
          </nav>
       </div>
    );
