@@ -1,4 +1,4 @@
-// src/components/CrimeContent.jsx
+// src/components/layer/crime-content/crime-content.jsx
 import { useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { crimeData } from '../../../data/data';

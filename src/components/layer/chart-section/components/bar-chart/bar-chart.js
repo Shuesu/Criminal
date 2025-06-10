@@ -17,7 +17,7 @@ export const BarChart = ({ data }) => {
       const height = containerRef.current.clientHeight;
 
       // Размеры и отступы
-      const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+      const margin = { top: 20, right: 10, bottom: 30, left: 70 };
       const innerWidth = width - margin.left - margin.right;
       const innerHeight = height - margin.top - margin.bottom;
 
@@ -112,7 +112,8 @@ export const BarChart = ({ data }) => {
          );
 
       yAxis.selectAll('text')
-         .style('letter-spacing', '1.5px');
+         .style('letter-spacing', '1.5px')
+         .style('font-size', '12px');
 
       yAxis.select('.domain').remove();
       yAxis.selectAll('.tick line').remove();

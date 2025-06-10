@@ -1,7 +1,7 @@
 :root {
 	--orange: #f1ac43;
 	--black: #241d13;
-	--hover-color: rgba(241, 172, 67, 0.2);
+	--main-color: 241, 172, 67;
 	--danger-color: #dc3545;
 	--font-size-base: 1vw;
 	--font-size-md: 1.2vw;
@@ -17,24 +17,23 @@ a {
 	all: unset;
 	cursor: pointer;
 }
+
 * {
 	box-sizing: border-box;
 }
 
-/* Для Chrome, Safari, Edge */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
 }
 
-/* Для Firefox */
 html {
 	scrollbar-width: none;
-	-ms-overflow-style: none; /* IE и Edge */
-}
+	-ms-overflow-style: none; 
+} */
 
 body {
-	overflow: -moz-scrollbars-none; /* Старые Firefox */
-	-ms-overflow-style: none; /* IE 10+ */
+	/* overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;  */
 	margin: 0;
 	font-family: 'VCR OSD Mono', monospace;
 	-moz-osx-font-smoothing: grayscale;

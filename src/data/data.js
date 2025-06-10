@@ -376,7 +376,22 @@ export const crimeData = [
           { name: '2022', value: 1151 },
         ],
         stats: 526.8,
-        textScroll: "The Central district of Omsk is traditionally considered one of the calmest districts of the city. However, due to the highest percentage of population and the inclusion of openly depressed territories (such as the Pervokirpichny microdistrict) and an impressive private sector, as well as a transit position between other districts of the Central district, it still occupies the first place in the number of committed crimes.",
+        textScroll: [
+          "The Central district of Omsk is traditionally considered one of the calmest districts of the city. However, due to the highest percentage of population and the inclusion of openly depressed territories (such as the Pervokirpichny microdistrict) and an impressive private sector, as well as a transit position between other districts of the Central district, it still occupies the first place in the number of committed crimes.",
+
+          "A 16-year - old girl from Omsk ended up speaking with the police after a date with a 21-year - old man in her own apartment while her parents were away at their dacha.When the adults returned, they found that a gold chain and money were missing, with a total damage of around 215,000 rubles.Law enforcement officers spoke with the young woman, learned about the rendezvous with the man, and found and detained him.The previously convicted suspect was found with the stolen chain and only 2,000 rubles, as he had already spent the remaining 63.",
+
+          "> It took a little over 2 hours for a 21-year-old man from Omsk to steal a fence that surrounded an abandoned house on 20th Party Congress Street. Under cover of darkness in early November 2022, he dismantled 29 sheets of corrugated iron with wire cutters, stopped a van, paid the driver 500 rubles, and asked two passersby to help load the fence. The accomplices were each given 1,000 rubles. The damage exceeded 140,000 rubles, but the suspect did not have time to sell the stolen goods as the police found all of the sheets on an abandoned summer cottage plot.",
+
+          "> A road conflict in the courtyard of a residential building on Prospekt Mira ended in a double theft. In late November 2022, a calm Omsk couple was driving their car. At the same time, a trio of tipsy men was walking along the sidewalk, and one of them stumbled and fell. Getting up, he bumped into the foreign car, and a conflict quickly arose, which quickly escalated into a fight. During the brawl, one of the men picked up the driver's phone, while the other took the wife's gadget that was lying in the car. The suspects were found within half an hour based on their descriptions.",
+
+          "***** RESONANT CASES *****",
+
+          "> Baldness and thick eyebrows became crucial in catching a resident of Omsk who stole from a 64-year-old pensioner. It all happened on February 23, 2022, when the victim was celebrating Defender of the Fatherland Day and invited a random passerby named Sergey to his home. In the morning, the guest disappeared, and along with him, a leather jacket, smartphone, and guitar. The man only turned to the police a month later as he was in the hospital. Law enforcement officers found a store seller who remembered these two and said that the suspect was a frequent customer and, supposedly, he was bald with thick eyebrows. The resident of Omsk was detained, the phone and jacket were seized, but he simply left the guitar in the entrance, and it disappeared.",
+
+          "> A 25-year-old man from Omsk got into a criminal case because of his childhood dream of owning a Husky dog. One day in April 2022, he saw a Husky dog in a store on 9th Leninskaya Street and couldn't resist taking it with him. It turned out that the dog belonged to a well-known employee of a canine therapy center in Omsk named Esiya, and had been stolen. Flyers with information about the missing dog were posted throughout the area, and concerned citizens called the police after seeing a similar dog in a private house on Dobrolyubov Street. That's where the police found Esiya.",
+
+        ],
       },
       {
         id: "district2",
