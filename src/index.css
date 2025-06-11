@@ -1,5 +1,6 @@
 :root {
 	--orange: #f1ac43;
+	--orange-light: rgba(241, 172, 67, 0.5);
 	--black: #241d13;
 	--main-color: 241, 172, 67;
 	--danger-color: #dc3545;
