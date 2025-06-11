@@ -15,8 +15,6 @@ export const CrimeContent = () => {
       return { currentCrime: crime, currentDistrict: district };
    }, [crimeType, selectedDistrict]);
 
-   console.log('Current icon:', currentCrime.icon); // Для отладки
-
    return (
       <>
          <MapSection
