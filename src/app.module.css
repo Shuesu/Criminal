@@ -7,6 +7,7 @@
 }
 
 .main {
+	height: 70vh;
 	display: grid;
 	grid-template:
 		'Area Area-2 Area-3 Area-3 Area-3' 1.75fr

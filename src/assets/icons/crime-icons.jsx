@@ -16,3 +16,4 @@ export const RobberyIcon = () => (
       <path d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
    </svg>
 );
+

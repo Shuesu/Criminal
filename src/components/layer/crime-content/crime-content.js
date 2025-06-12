@@ -33,7 +33,7 @@ export const CrimeContent = () => {
          />
          <SvgBox
             iconName={currentCrime.icon}
-            key={`${crimeType}-${selectedDistrict}`} // Уникальный ключ
+            key={`${crimeType}-${selectedDistrict}`}
          />
       </>
    );

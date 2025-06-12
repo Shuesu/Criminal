@@ -3,7 +3,6 @@
 	--orange-light: rgba(241, 172, 67, 0.5);
 	--black: #241d13;
 	--main-color: 241, 172, 67;
-	--danger-color: #dc3545;
 	--font-size-base: 1vw;
 	--font-size-md: 1.2vw;
 	--font-size-lg: 1.3vw;
@@ -14,43 +13,41 @@
 	filter: hue-rotate(85deg);
 }
 
-a {
-	all: unset;
-	cursor: pointer;
-}
-
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-/* ::-webkit-scrollbar {
-	display: none;
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE/Edge */
 }
 
-html {
-	scrollbar-width: none;
-	-ms-overflow-style: none; 
-} */
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari */
+}
 
 body {
-	/* overflow: -moz-scrollbars-none;
-	-ms-overflow-style: none;  */
-	margin: 0;
 	font-family: 'VCR OSD Mono', monospace;
-	-moz-osx-font-smoothing: grayscale;
 	background: var(--black);
 	font-size: var(--font-size-base);
 	color: var(--orange);
 	text-shadow: 0 0 5px var(--orange);
 	text-transform: uppercase;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
-@font-face {
-	font-family: 'VCR OSD Mono';
-	src: url('../src/assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+a {
+	all: unset;
+	cursor: pointer;
 }
 
 button,
@@ -62,4 +59,12 @@ select {
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+	font-family: 'VCR OSD Mono';
+	src: url('../src/assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }

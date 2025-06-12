@@ -8,10 +8,12 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 200px;
+	height: 100%;
 	overflow: auto;
 	text-transform: none;
+	overflow-y: auto;
 }
+
 .textContainer {
 	width: 90%;
 	max-width: none;
